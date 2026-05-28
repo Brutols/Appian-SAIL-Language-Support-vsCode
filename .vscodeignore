@@ -1,0 +1,16 @@
+.vscode-test
+.vscode
+node_modules
+.git
+.gitignore
+*.vsix
+.eslintignore
+.eslintrc.json
+.prettier
+.prettierignore
+.prettierrc
+src
+tsconfig.json
+vsc-extension-quickstart.md
+webpack.config.js
+.editorconfig

@@ -1,0 +1,62 @@
+{
+  "name": "sail-language",
+  "displayName": "SAIL Language Support",
+  "description": "Syntax highlighting and formatter for Appian SAIL language",
+  "version": "0.0.1",
+  "publisher": "AppianDeveloper",
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "activationEvents": [
+    "onLanguage:sail"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Formatters"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sail",
+        "aliases": [
+          "SAIL",
+          "sail"
+        ],
+        "extensions": [
+          ".sail"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sail",
+        "scopeName": "source.sail",
+        "path": "./syntaxes/sail.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "sail.format",
+        "title": "Format SAIL Document"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.0",
+    "@types/vscode": "^1.50.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^4.4.0"
+  },
+  "dependencies": {}
+}
