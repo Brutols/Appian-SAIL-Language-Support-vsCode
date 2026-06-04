@@ -1,10 +1,14 @@
 {
-  "name": "sail-language",
-  "displayName": "SAIL Language Support",
+  "name": "appian-sail-language-support",
+  "displayName": "Appian SAIL Language Support",
   "description": "Syntax highlighting and formatter for Appian SAIL language",
   "version": "0.0.1",
-  "publisher": "AppianDeveloper",
+  "publisher": "DanieleMotta",
   "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Brutols/Appian-SAIL-Language-Support-vsCode"
+  },
   "engines": {
     "vscode": "^1.50.0"
   },
@@ -14,6 +18,10 @@
   "categories": [
     "Programming Languages",
     "Formatters"
+  ],
+  "keywords": [
+    "appian",
+    "sail"
   ],
   "contributes": {
     "languages": [

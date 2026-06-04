@@ -21,6 +21,8 @@ A VS Code extension that provides syntax highlighting and code formatting for Ap
 
 ## Installation
 
+### Install from VSCode Extensions if available
+
 ### From Source
 1. Clone this repository
 2. Run `npm install` to install dependencies
